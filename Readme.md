@@ -49,6 +49,20 @@ Add this line to the end of your local ~/.zshrc to load your synced settings:
 [[ -f ~/.zshrc_common ]] && source ~/.zshrc_common
 ```
 
+## OS-Specific Settings
+Inside ~/.zshrc_common, use the following logic to handle Mac vs. Linux differences:
+
+```bash
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # MacOS specific (Homebrew, Raycast, etc.)
+    alias brewup="brew update && brew upgrade"
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # Linux specific (Apt, Pacman, etc.)
+    alias update="sudo apt update && sudo apt upgrade"
+fi
+```
+
+
 ## Usage & Maintenance
 
 ```bash
