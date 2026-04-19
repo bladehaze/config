@@ -1,6 +1,3 @@
-# Initialize the bare repo in a hidden folder
-# git init --bare $HOME/.myconfig
-
 # Create an alias to interact with this repo specifically
 # (Add this to your .bashrc or .zshrc later so it persists)
 alias config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
