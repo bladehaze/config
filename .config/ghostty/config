@@ -1,0 +1,12 @@
+# Swaps Left Control with Left Super
+key-remap = left_control=left_super
+key-remap = left_super=left_control
+
+# Swaps Right Control with Right Super (optional)
+key-remap = right_control=right_super
+key-remap = right_super=right_control
+# This disconnects the 'Select All' action from the macOS menu bar
+macos-menu-item-shortcuts = select_all=none
+
+# Then, ensure the key is unbound or ignored internally
+keybind = super+a=unbind
