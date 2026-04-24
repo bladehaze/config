@@ -6,8 +6,23 @@ key-remap = left_super=left_control
 key-remap = right_control=right_super
 key-remap = right_super=right_control
 # This disconnects the 'Select All' action from the macOS menu bar
-macos-menu-item-shortcuts = select_all=none
+# macos-menu-item-shortcuts = select_all=none
 
 # Then, ensure the key is unbound or ignored internally
 keybind = super+a=unbind
 link-url = true
+
+# Explicitly enable copy on select
+copy-on-select = true
+
+# Ensure it writes to the system clipboard
+clipboard-write = allow
+
+# This helps ensure the selection is treated as a clipboard event
+confirm-close-surface = false
+
+# unbind this
+keybind = super+w=unbind
+
+# unbind this
+keybind = super+d=unbind
