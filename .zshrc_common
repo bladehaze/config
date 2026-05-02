@@ -4,3 +4,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 
 # Hide untracked files so 'config status' doesn't list your entire home folder
 config config --local status.showUntrackedFiles no
+
+if [[ "$(hostname)" == "zhanghang-mac.roam.internal" ]]; then
+  alias cloud="gcert; ssh ..."
+fi
